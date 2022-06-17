@@ -4,7 +4,7 @@
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: #59331D;
+  --base-color: #59331d;
   --base-color-second: #734822;
   --base-color-alt: #734822;
   --title-color: hsl(var(--hue) 41% 10%);
@@ -203,8 +203,7 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover 
-nav ul li a.active {
+nav ul li a:hover nav ul li a.active {
   color: var(--base-color);
 }
 
@@ -223,7 +222,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after,
-nav ul li a.active::after  {
+nav ul li a.active::after {
   width: 100%;
   font-weight: bold;
   -webkit-font-smoothing: auto;
@@ -304,7 +303,7 @@ nav.show div.icon-close {
   width: 100%;
 }
 
-#header.scroll{
+#header.scroll {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -489,7 +488,7 @@ nav.show div.icon-close {
 }
 
 #contact ul.grid {
-  gap: 2rem
+  gap: 2rem;
 }
 
 #contact ul li {
@@ -508,7 +507,7 @@ footer {
 }
 
 footer.section {
-  padding: 4.0rem;
+  padding: 4rem;
 }
 
 footer .logo {
@@ -518,7 +517,7 @@ footer .logo {
 
 footer .brand p {
   color: var(--text-color-light);
-  margin-bottom:0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 footer i {
@@ -537,12 +536,12 @@ footer .social a {
 }
 
 footer .social a:hover {
-  transform: translateY(-8px)
+  transform: translateY(-8px);
 }
 
 /*RESPONSIBILITY*/
 
-  /*TABLET*/
+/*TABLET*/
 
 @media (min-width: 992px) {
   :root {
@@ -551,144 +550,143 @@ footer .social a:hover {
   }
 }
 
-  /*PC*/
-  
-  @media (min-width: 1200px) {
-    
-    /*ELEMENTS*/
+/*PC*/
 
-    .container {
-      max-width: 1120px;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  
-    .button {
-      height: 3.1256rem;
-    }
-  
-    .section {
-      padding: 10rem 0;
-    }
+@media (min-width: 1200px) {
+  /*ELEMENTS*/
 
-    /*MENU*/
-    
-    nav .menu {
-      opacity: 1;
-      visibility: visible;
-      top: 0;
-    }
-
-    nav .menu ul {
-      display: flex;
-      gap: 2rem;
-    }
-    
-    nav .menu ul li a.title {
-      font: 400 1rem var(--body-font);
-      -webkit-font-smoothing: antialiased;
-    }
-
-    nav .menu ul li a.title.active {
-      font-weight: bold;
-      color: var(--base-color);
-      -webkit-font-smoothing: auto;
-    }
-
-    nav .icon-menu{
-      display: none;
-    }
-
-    /*BODY*/
-
-    main {
-      margin-top: var(--header-height);
-    }
-
-    /*HOME*/
-
-    #home .container {
-      grid-auto-flow: column;
-      justify-content: space-between;
-      margin: 0 auto;
-    }
-
-    #home .image {
-      order: 1;
-      width: 500px;
-    }
-    
-    #home .text {
-      order: 0;
-      max-width: 24rem;
-      text-align: left;
-    }
-    
-    #home .text h2 {
-      font-size: 2.25rem;
-    }
-    
-    /*ABOUT*/
-    
-    #about .container {
-      grid-auto-flow: column;
-      margin: 0 auto;
-    }
-    
-    /*SERVICES*/
-
-    .cards {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .card {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-
-    /*TESTIMONIALS*/
-
-    .section header,
-    #testimonials header {
-      max-width: 32rem;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #testimonials .container {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    /*CONTACT*/
-    
-    #contact .container {
-      grid-auto-flow: column;
-      align-items: center;
-    }
-    
-    #contact .text {
-      max-width: 25rem;
-    }
-    
-    #contact .text h2 {
-      font-size: 2.25rem;
-    }
-    
-    /*FOOTER*/
-
-    footer.section {
-      padding: 3.75rem;
-    }
-
-    footer .container {
-      grid-auto-flow: column;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    footer .logo {
-      font-size: 2.25rem;
-    }
+  .container {
+    max-width: 1120px;
+    margin-right: auto;
+    margin-left: auto;
   }
+
+  .button {
+    height: 3.1256rem;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  /*MENU*/
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    color: var(--base-color);
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  /*BODY*/
+
+  main {
+    margin-top: var(--header-height);
+  }
+
+  /*HOME*/
+
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+    width: 500px;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  #home .text h2 {
+    font-size: 2.25rem;
+  }
+
+  /*ABOUT*/
+
+  #about .container {
+    grid-auto-flow: column;
+    margin: 0 auto;
+  }
+
+  /*SERVICES*/
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /*TESTIMONIALS*/
+
+  .section header,
+  #testimonials header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*CONTACT*/
+
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  #contact .text h2 {
+    font-size: 2.25rem;
+  }
+
+  /*FOOTER*/
+
+  footer.section {
+    padding: 3.75rem;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}

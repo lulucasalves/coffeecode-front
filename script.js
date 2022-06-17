@@ -11,16 +11,15 @@ const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
   link.addEventListener('click', function () {
-    nav.classList.remove ('show')
+    nav.classList.remove('show')
   })
 }
 
 function changeHeaderWhenScroll() {
-const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+  const header = document.querySelector('#header')
+  const navHeight = header.offsetHeight
 
   if (window.scrollY >= navHeight) {
-
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
@@ -43,7 +42,7 @@ const swiper = new Swiper('.swiper-container', {
 })
 
 const scrollReveal = ScrollReveal({
-  origin:'top',
+  origin: 'top',
   distace: '30px',
   duration: 1000,
   reset: true
@@ -62,21 +61,18 @@ scrollReveal.reveal(
 const backToTopButton = document.querySelector('.back-to-top')
 
 function backToTop() {
-
-  if(window.scrollY >= 1000) {
+  if (window.scrollY >= 1000) {
     backToTopButton.classList.add('show')
-  }
-  else {
+  } else {
     backToTopButton.classList.remove('show')
   }
 }
 
 const sections = document.querySelectorAll('main section[id]')
 function activateMenuAtCurrentSection() {
-
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
 
-  for( const section of sections ) {
+  for (const section of sections) {
     const sectionTop = section.offsetTop
     const sectionHeight = section.offsetHeight
     const sectionId = section.getAttribute('id')
@@ -84,18 +80,16 @@ function activateMenuAtCurrentSection() {
     const checkpointStart = checkpoint >= sectionTop
     const checkpointEnd = checkpoint <= sectionTop + sectionHeight
 
-    if(checkpointStart && checkpointEnd) {
+    if (checkpointStart && checkpointEnd) {
       document
-      .querySelector('nav ul li a[href*=' + sectionId + ']')
-      .classList.add('active')
-    }
-    else {
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
+        .classList.add('active')
+    } else {
       document
-      .querySelector('nav ul li a[href*=' + sectionId + ']')
-      .classList.remove('active')
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
+        .classList.remove('active')
     }
   }
-
 }
 
 window.addEventListener('scroll', function () {
